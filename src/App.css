@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+*{margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container-flex{
   display: flex;
   flex-direction: column;
+}
+.head{
+  display: flex;
+  height: 100px;
+}
+.container-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin-right: 20%;
+}
+.container-nav{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 20%;
+}
+nav{
+  display: flex;
+}
+a{
+  text-decoration: none;
+}
+.container-nav p{
+  margin: 10px;
+  font-size: 1em;
+  font-weight: 400;
+  color: gray;
+  width: 50px;
+}
+
+.container-p{
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 200px;
+}
+.container-p p{
+  font-size: 2em;
+  font-weight: 900;
+ 
+}
+.container-flex-img{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.container-imgs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+img{
+  width: 280px;
+  height: 300px;
+}
+.img-fondo-blanco{
+  margin: 10%;
+  width: 280px;
+  height: 300px;
+}
+.img-original{
+  margin: 10%;
+  width: 280px;
+  height: 300px;
+}
+.download:hover,
+.download:focus {
+  -webkit-animation: download 1s;
+          animation: download 1s;
+  box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
 }
 
-.App-link {
-  color: #61dafb;
+@-webkit-keyframes download {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@keyframes download {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
   }
 }
+
+.download {
+  --color: #ef6eae;
+  --hover: #ef8f6e;
+  cursor: pointer;
+}
+
+
+button {
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+}
+
+
